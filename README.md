@@ -1,2 +1,3 @@
 # omr_sheet_interpreter
-Parse music sheets into .midi files (IN DEVELOPMENT)
+
+The goal of this project is to create a pipeline that allows users to easily turn any given music sheet into a .midi file. This project proved a lot harder than initially expected so its still ongoing. Currently I'm done with the image preprocessing and am currently working on proper symbol extraction (the notes and breaks are easy, but their respective modifiers are harder to group properly). Still need to figure a way to do symbol identification that doesn't overload on heuristics, because that would defeat the original purpose of this project by requiring hyperparameter tuning for each sheet. It will require at least few coordinated neural networks but I haven't gotten around developing a proper architecture for it. Also missing a few "proper coding" features (the sheet path is hardcoded at the start of the code...).
